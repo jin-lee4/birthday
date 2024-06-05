@@ -1,7 +1,3 @@
-<script>
-  import image from "/src/images/doodle.png";
-</script>
-
 <body>
   <div>
     <div>
@@ -10,12 +6,12 @@
     </div>
     <div>
       <enhanced:img
-        src="/src/images/doodle.png"
+        src="/src/images/doodle.png?w=480;200"
         alt="birthday doodle"
-        sizes="min(480, 100vw)"
+        class="doodle"
       />
     </div>
-    <div>
+    <div style="margin-top: 10px;">
       <table>
         <tr>
           <td class="info-title">When</td>
@@ -42,7 +38,7 @@
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3em;
     color: red;
   }
 
@@ -52,5 +48,33 @@
 
   table {
     width: 100%;
+  }
+
+  .details {
+    text-align: right;
+  }
+
+  @media only screen and (min-width: 720px) {
+    .doodle {
+      width: 480px;
+      height: auto;
+    }
+
+    p,
+    table {
+      font-size: 1.5em;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .doodle {
+      width: 340px;
+      height: auto;
+    }
+
+    p,
+    table {
+      font-size: 1.5em;
+    }
   }
 </style>
