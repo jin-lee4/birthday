@@ -6,7 +6,7 @@
     </div>
     <div>
       <enhanced:img
-        src="/src/images/doodle.png?w=480;200"
+        src="/src/images/doodle.png"
         alt="birthday doodle"
         class="doodle"
       />
